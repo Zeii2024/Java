@@ -1,10 +1,10 @@
-// ×÷Ò»¸öÊ±ÖÓ£¬ÊµÏÖ·ÖÖÓºÍÐ¡Ê±µÄµÝÔöÔË×ª
-// ¹¹ÔìÀàdisplay£¬°üÀ¨ÖµµÝÔöºÍÖµ·µ»ØµÄ¹¦ÄÜ
-// ½«Æä·Ö±ðÊµÀý»¯ÎªÐ¡Ê±ºÍ·ÖÖÓÁ½¸ö¶ÔÏó
+// ï¿½ï¿½Ò»ï¿½ï¿½Ê±ï¿½Ó£ï¿½Êµï¿½Ö·ï¿½ï¿½Óºï¿½Ð¡Ê±ï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½×ª
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½displayï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ØµÄ¹ï¿½ï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½Ö±ï¿½Êµï¿½ï¿½ï¿½ï¿½ÎªÐ¡Ê±ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 public class Display {
-	int value = 0;
-	int limit = 60;
+	private int value = 0;
+	private int limit = 60;
 	
 	Display(int l){
 		
