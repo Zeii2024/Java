@@ -33,8 +33,8 @@ public class Client {
                         // 获取 pipeline
                         ChannelPipeline pipeline = ch.pipeline();
                         // 3. 添加具体的 handler
-                        pipeline.addLast(new StringDecoder());  // 字符串解码器
-                        pipeline.addLast(new StringEncoder());  // 字符串编码器
+                        pipeline.addLast(new MessageEncoder());  // 字符串解码器
+                        pipeline.addLast(new MessageDecoder());  // 字符串编码器
                         pipeline.addLast(new ChannelInboundHandlerAdapter(){
                             @Override
                             public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {

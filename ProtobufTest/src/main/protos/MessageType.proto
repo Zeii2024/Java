@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package protos;
+import "options.proto";
+
+option java_package = "messages";
+option java_outer_classname = "Messages";
+
+// 消息发送的格式是： length:0-4  +  msgId: 4-8  +  Message: allLength - 8
+
+message Welcome{
+    option (msgId) = 10000;  // 继承自 msg，设置属性 msgId 的值
+    uint32 greeting = 1;
+    string content = 2;
+}
+
+message Talk{
+    option (msgId) = 10001;
+    string name = 1;
+    string content = 2;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$USER_HOME$/CodeDownload/pvpets/pvpets_mesh/sql/0.1/20160731-add_perms_to_authz_subject.sq.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/CodeDownload/pvpets/pvpets_mesh/sql/0.1/20160801-add_new_perms_from_HS_3_0.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/CodeDownload/pvpets/pvpets_mesh/sql/0.1/20160810-add_test_admin_users.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/CodeDownload/pvpets/pvpets_mesh/sql/0.1/20160831-asset_types.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/CodeDownload/pvpets/pvpets_mesh/sql/0.1/20170217-update_news_table.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/CodeDownload/pvpets/pvpets_mesh/sql/0.1/20170224-update_messages_table.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/CodeDownload/pvpets/pvpets_mesh/sql/0.1/20170308-update_user_table_collate.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/CodeDownload/pvpets/pvpets_mesh/sql/0.1/20170322-update_several_tables_charset_collate.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/CodeDownload/pvpets/pvpets_mesh/sql/0.1/20170330-update_increase_user_data_type.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/CodeDownload/pvpets/pvpets_mesh/sql/0.2/leviathan_env.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/CodeDownload/pvpets/pvpets_mesh/sql/0.2/leviathan_env_autoid.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/CodeDownload/pvpets/pvpets_mesh/sql/0.2/leviathan_env_default.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/CodeDownload/pvpets/pvpets_mesh/sql/0.2/leviathan_env_user.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/CodeDownload/pvpets/pvpets_mesh/sql/0.3/Realm/20170526-add_vip_in_user.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/CodeDownload/pvpets/pvpets_mesh/sql/0.3/global/20170427-add_iap_perms.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/CodeDownload/pvpets/pvpets_mesh/sql/0.3/global/20170428-update_overlay_schedule_data.txt" dialect="MySQL" />
+    <file url="file://$USER_HOME$/CodeDownload/pvpets/pvpets_mesh/sql/0.3/global/20170507-add_realm_bucket.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/CodeDownload/pvpets/pvpets_mesh/sql/0.3/global/20170613-add_spanish_language_code.sql" dialect="MySQL" />
+    <file url="file://$USER_HOME$/CodeDownload/pvpets/pvpets_mesh/sql/0.3/global/20170613-update_language_code_type_for_asset2_string.sql" dialect="MySQL" />
+  </component>
+</project>

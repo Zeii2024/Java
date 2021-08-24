@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package protos;
+
+import "google/protobuf/descriptor.proto";  // 要有这个才能 extend google.protobuf.MessageOptions
+
+option java_package = "messages";
+option java_outer_classname = "Options";
+
+// 定义属性
+extend google.protobuf.MessageOptions{
+  uint32 msgId = 1000;
+}

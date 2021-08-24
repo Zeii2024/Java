@@ -36,8 +36,8 @@ public class Server {
                         protected void initChannel(NioSocketChannel ch) throws Exception {
                             // 4. 获取 pipeline 并配置 pipeline 的各组件，即具体的 handler
                             ChannelPipeline pipeline = ch.pipeline();
-                            pipeline.addLast(new StringEncoder());
-                            pipeline.addLast(new StringDecoder());
+                            pipeline.addLast(new MessageEncoder());
+                            pipeline.addLast(new MessageDecoder());
                             // 5. 添加自定义的 handler
                             // 连接接入
                             pipeline.addLast(new ChannelInboundHandlerAdapter() {
@@ -46,7 +46,7 @@ public class Server {
                                     Channel income = ctx.channel(); // 获取发生事件的 channel
                                     channels.add(income); // 先加入
                                     String msg = "欢迎" + "[" + income.remoteAddress() + "]" + "进入聊天室";
-                                    //System.out.println(msg);
+                                    System.out.println(msg);
                                     for (Channel ch : channels) {  // 遍历并广播消息
                                         if (ch != income) {
                                             ch.writeAndFlush(msg);
@@ -63,7 +63,7 @@ public class Server {
                                 public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
                                     Channel income = ctx.channel(); // 获取发生事件的 channel
 
-                                    // System.out.println(msg);
+                                    System.out.println(msg);
                                     for (Channel ch : channels) {  // 遍历并广播消息
                                         //System.out.println(ch+"read");
                                         if (ch != income) {
@@ -81,7 +81,7 @@ public class Server {
                                 public void handlerRemoved(ChannelHandlerContext ctx) throws Exception {
                                     Channel income = ctx.channel(); // 获取发生事件的 channel
                                     String msg = "用户" + "[" + income.remoteAddress() + "]" + "离开聊天室";
-                                    //System.out.println(msg);
+                                    System.out.println(msg);
                                     for (Channel ch : channels) {  // 遍历并广播消息
                                         if (ch != income) {
                                             ch.writeAndFlush(msg);
